@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
         }
         .container {
-            margin-top: 20px;
+            margin-top: 10px;
         }
         .profile-photo {
             width: 100%;
@@ -27,8 +27,8 @@
         p {
             text-align: justify;
         }
-        footer {
-            text-align: center;
+        .footer {
+            text-align: center !important;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -64,6 +64,15 @@
                     <a class="nav-link" href="#">Research</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#">Cybersecurity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Software-defined Radio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hobbies</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">CV</a>
                 </li>
                 <li class="nav-item">
@@ -77,22 +86,37 @@
             <div class="col-md-4">
                 <img src="images/oscar_foto.jpeg" alt="Oscar Llerena" class="profile-photo">
                 
-                <p>Highly motivated and detail-oriented Computer Science PhD candidate with a strong background in communication
-                    systems, network security, and intrusion detection systems. Proven ability to work independently and collaborate
-                    effectively with teams. Seeking to leverage these skills and experiences in the Research Associate in the field of new
-                    communication technologies for the Internet of the future at Karlsruhe Institute of Technology (KIT).</p>
+                <p id="profile"></p>
+
             </div>
             <div class="col-md-8">
                 <img src="images/iot_architecture_only.gif" alt="Description of GIF" class="gif">
             </div>
         </div>
     </div>
+
+    <footer class="footer">
+        &copy; 2021 Developed by Oscar Ll.
+    </footer>
     
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $.ajax({
+            url: "profile.txt",
+            dataType: "html",
+            success: function(data) {
+                $("#profile").html(data);
+            }
+        });
+        // $(document).ready(function(){
+        //     $.get("profile.txt", function(data, status){
+        //         $("#profile").html(data);
+        //     });
+        // });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <footer class="footer">
-        <p>&copy; 2021 Developed by Oscar Ll.</p>
-    </footer>
+    
 </body>
 </html>
