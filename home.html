@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #212529;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .profile-photo {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: auto;
+        }
+        .gif {
+            width: 100%;
+            max-width: 800px;
+            display: block;
+            margin: auto;
+        }
+        p {
+            text-align: justify;
+        }
+        footer {
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 20px;
+            line-height: 0px;
+        }
+        navbar-nav {
+            align-self: center;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Profile <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/oscar_foto.jpeg" alt="Oscar Llerena" class="profile-photo">
+                
+                <p>Highly motivated and detail-oriented Computer Science PhD candidate with a strong background in communication
+                    systems, network security, and intrusion detection systems. Proven ability to work independently and collaborate
+                    effectively with teams. Seeking to leverage these skills and experiences in the Research Associate in the field of new
+                    communication technologies for the Internet of the future at Karlsruhe Institute of Technology (KIT).</p>
+            </div>
+            <div class="col-md-8">
+                <img src="images/iot_architecture_only.gif" alt="Description of GIF" class="gif">
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <footer class="text-center">
+        <p>Developed by John Doe</p>
+    </footer>
+</body>
+</html>
