@@ -1,11 +1,6 @@
 <br>
 <strong>Oscar E. Llerena Castro</strong>
-<br>- Ph.D. Student at Data Science Department, 
-Seoul National University of Science and Technology (<i>SeoulTech</i>), South Korea.
-<br>- M.Sc. in Telecom. and Telematics, 
-Electrical Engineering and Computing Faculty, State University of Campinas (<i>Unicamp</i>), Brazil. 
-<br>- B.Sc. in Telecom Engineering, National University of Engineering (<i>UNI</i>), Peru.
-<br><br>
+<br>
 Hi, my name is Oscar Llerena. I learned how to transfer information from one point to another, mainly 
 wirelessly, and now I am learning how to process it, secure it, and extract value
 from it. I have participated in projects along the full stack of the information flow.
